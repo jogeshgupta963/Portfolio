@@ -15,8 +15,8 @@ function About() {
           style={{
             backgroundImage: `url(${me})`,
             backgroundSize: 'cover',
-            width: '500px',
-            height: '500px',
+            width: '400px',
+            height: '700px',
           }}
           className="shadow-lg shadow-[#18181b] group container rounded-md flex justify-center items-center mx-auto mb-4 "
         ></div>

@@ -10,15 +10,15 @@ function Home() {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         {/* <p className={`text-2xl text-[${colours.secondaryColor}]`}> */}
         {/* <p className={`text-2xl text-[#6d28d9]`}>Hello,My name is </p> */}
-        <p className={`text-3xl py-2 text-[#88edff]`}>Hello,My name is </p>
-        <h1 className={`text-3xl py-2 sm:text-7xl font-bold text-[#f8fafc]`}>
+        <p className={`text-2xl py-1 text-[#88edff]`}>Hello,My name is </p>
+        <h1 className={`text-2xl  sm:text-7xl font-bold text-[#f8fafc]`}>
           Jogesh Gupta
         </h1>
         {/* <h2 className="text-3xl sm:text-6xl font-bold text-[#8892b0]"> */}
-        <h2 className="text-3xl py-2 sm:text-7xl font-bold text-[#dbeafe]">
+        <h2 className="text-3xl sm:text-7xl font-bold text-[#c7d2fe]">
           I am a <span className="text-[#88edff]"> Full Stack</span> Developer
         </h2>
-        <p className="text-3xl  text-[#ccd6f6] py-2  mt-2">
+        <p className="text-2xl  text-[#ccd6f6]   mt-2">
           I am a Web Developer more focused on building scalable
           servers.Currently Learning Blockchain and Cloud
         </p>

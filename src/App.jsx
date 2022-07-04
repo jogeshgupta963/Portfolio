@@ -12,9 +12,12 @@ import {
   Skills,
   Work,
 } from './components'
+import Loader from './components/Loader'
+import './loader.css'
 function App() {
   return (
     <div>
+      {(onload) => <Loader />}
       <Particle />
       <Navbar />
       <Home />
