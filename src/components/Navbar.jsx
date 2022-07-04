@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import resume from '../assets/Jogesh_Resume.pdf'
 import {
   FaBars,
   FaTimes,
@@ -11,31 +12,102 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Logo from '../assets/logo.svg'
 import { colours } from '../assets/colors'
+import { Link } from 'react-scroll'
 function Navbar() {
   const [nav, setNav] = useState(false)
 
   return (
     <div
-      className={`fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300`}
+      className={`fixed w-full h-[80px] flex justify-between items-center px-4  text-white`}
     >
-      <div>
-        <img
+      <div className="pl-10 text-4xl hover:cursor-pointer ">
+        <Link to="home" smooth={true} offset={50}>
+          {/* <img
           src={Logo}
           alt="logo"
           className="h-8"
           style={{
             width: '50px',
           }}
-        />
+        /> */}
+          Portfo<span className="text-[#88edff]">lio</span>
+        </Link>
       </div>
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Works</li>
-        <li>Contact</li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="home"
+            smooth={true}
+            offset={50}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="about"
+            smooth={true}
+            offset={50}
+          >
+            About
+          </Link>
+        </li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="skills"
+            smooth={true}
+            offset={50}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="work"
+            smooth={true}
+            offset={50}
+          >
+            Works
+          </Link>
+        </li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="achievement"
+            smooth={true}
+            offset={50}
+          >
+            Achievements
+          </Link>
+        </li>
+        <li className="group">
+          <Link
+            className="group-hover:border-[#3b82f6] font-bold text-5lg group-hover:bg-[#3b82f6]
+            p-4 rounded-lg
+            "
+            to="contact"
+            smooth={true}
+            offset={50}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* hamburger */}
@@ -75,7 +147,7 @@ function Navbar() {
           "
           >
             <a
-              href="https://www.linkedin.com/in/james-kim-b8a8b817b/"
+              href="https://www.linkedin.com/in/jogesh-gupta-366876229/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300  "
@@ -91,7 +163,7 @@ function Navbar() {
           "
           >
             <a
-              href="https://www.linkedin.com/in/james-kim-b8a8b817b/"
+              href="https://github.com/jogeshgupta963"
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300  "
@@ -108,6 +180,7 @@ function Navbar() {
           >
             <a
               href="https://www.linkedin.com/in/james-kim-b8a8b817b/"
+              // mailto=""
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300  "
@@ -123,7 +196,7 @@ function Navbar() {
           "
           >
             <a
-              href="https://www.linkedin.com/in/james-kim-b8a8b817b/"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300  "

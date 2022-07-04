@@ -4,6 +4,7 @@
 import './index.css'
 import {
   About,
+  Achievments,
   Contact,
   Home,
   Navbar,
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Work />
+      <Achievments />
       <Contact />
     </div>
   )

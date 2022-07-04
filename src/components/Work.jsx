@@ -6,49 +6,54 @@ import ProjectList from './ProjectList'
 function Work() {
   const projects = [
     {
-      name: 'Project 1',
+      name: 'Ecommerce',
       img: project,
-      tech: 'React, Node, Express, MongoDB',
-      demo: 'https://www.google.com',
-      code: 'https://www.google.com',
+      tech: 'MERN',
+      demo: 'disabled',
+      code: 'https://github.com/jogeshgupta963/MERN_ecommerce',
     },
     {
-      name: 'Project 2',
+      name: 'Krishi Seva',
       img: project,
-      tech: 'React, Node, Express, MongoDB',
+      tech: 'MERN',
       demo: 'https://www.google.com',
-      code: 'https://www.google.com',
+      code: 'https://github.com/jogeshgupta963/gdscHack--krishiSeva',
     },
     {
-      name: 'Project 3',
+      name: 'Movie Website',
       img: project,
-      tech: 'React, Node, Express, MongoDB',
-      demo: 'https://www.google.com',
-      code: 'https://www.google.com',
+      tech: ' React',
+      demo: 'disabled',
+      code: 'https://github.com/jogeshgupta963/react-movie-website',
     },
     {
-      name: 'Project 4',
+      name: 'Real time ChatApp',
       img: project,
-      tech: 'React, Node, Express, MongoDB',
+      tech: 'React,Node,Socket.io',
       demo: 'https://www.google.com',
-      code: 'https://www.google.com',
+      code: 'https://github.com/jogeshgupta963/ChatApp',
     },
   ]
   return (
     <div name="work" className={`w-full md:h-screen text-gray-300`}>
-      <div className="max-w-[10000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600 ">
-            Work
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full">
+        {/* <div className="pb-8"> */}
+        {/* <div> */}
+        {/* <p className="text-4xl mb-5 font-bold inline border-b-4 text-center items-center justify-center mb-5  border-pink-600 ">
+            Works
+          </p> */}
+        <div>
+          <p className="text-4xl font-bold inline border-b-4 border-[#3b82f6]">
+            Works
           </p>
-          <p className="py-6">Checkout out some of my recent works</p>
-          {/* grid */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
-            {projects.map((project) => (
-              <ProjectList projects={project} />
-            ))}
-          </div>
         </div>
+        {/* grid */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-10 ">
+          {projects.map((project) => (
+            <ProjectList projects={project} />
+          ))}
+        </div>
+        {/* </div> */}
       </div>
     </div>
   )
