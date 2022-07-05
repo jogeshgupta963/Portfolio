@@ -127,7 +127,7 @@ function Navbar() {
         <ul
           className={
             nav
-              ? `absolute top-0 left-0 w-full h-screen bg-[${colours.themeColor}] flex flex-col justify-center items-center`
+              ? `absolute top-0 left-0 w-full h-screen bg-[#262626] flex flex-col justify-center items-center`
               : 'hidden'
           }
         >
