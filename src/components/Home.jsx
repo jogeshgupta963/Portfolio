@@ -3,7 +3,6 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 import { colours } from '../assets/colors'
 function Home() {
-  console.log(colours)
   return (
     <div name="home" className="w-full h-screen ">
       {/* container */}

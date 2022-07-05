@@ -20,7 +20,7 @@ function Navbar() {
     <div
       className={`fixed w-full h-[80px] flex justify-between items-center px-4  text-white`}
     >
-      <div className="pl-10 text-4xl hover:cursor-pointer ">
+      <div className="text-4xl hover:cursor-pointer ">
         <Link to="home" smooth={true} offset={50}>
           {/* <img
           src={Logo}
@@ -112,13 +112,14 @@ function Navbar() {
 
       {/* hamburger */}
       <div
-        className="md:hidden z-10"
+        className="md:hidden flex z-15"
         onClick={() => setNav(!nav)}
         style={{
-          marginLeft: '90%',
+          marginLeft: '50%',
         }}
       >
-        {nav ? <FaTimes /> : <FaBars />}
+        {console.log('nav', nav)}
+        {nav ? <FaTimes className="z-20" /> : <FaBars />}
         {/* <FaBars /> */}
       </div>
       {/* mobile menu  */}
@@ -130,11 +131,56 @@ function Navbar() {
               : 'hidden'
           }
         >
-          <li className="py-6 text-4xl">Home</li>
-          <li className="py-6 text-4xl">About</li>
-          <li className="py-6 text-4xl">Skills</li>
-          <li className="py-6 text-4xl">Works</li>
-          <li className="py-6 text-4xl">Contact</li>
+          <li className="py-6 text-4xl">
+            <Link
+              to="home"
+              onClick={() => setNav(false)}
+              smooth={true}
+              offset={50}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              to="about"
+              onClick={() => setNav(false)}
+              smooth={true}
+              offset={50}
+            >
+              About
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              to="skills"
+              onClick={() => setNav(false)}
+              smooth={true}
+              offset={50}
+            >
+              Skills
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              to="work"
+              onClick={() => setNav(false)}
+              smooth={true}
+              offset={50}
+            >
+              Works
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              to="contact"
+              onClick={() => setNav(false)}
+              smooth={true}
+              offset={50}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       {/* social icons  */}
