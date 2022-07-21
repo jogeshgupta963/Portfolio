@@ -38,7 +38,7 @@ function Contact() {
           className="bg-[#ccd6f6] text-black text-bold p-4 rounded-xl outline-none shadow-lg"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items ">
+        <button className="text-white border-2 hover:bg-[#3b82f6] hover:border-[#3b82f6] px-4 py-3 my-8 mx-auto flex items ">
           Let's Connect
         </button>
       </form>

@@ -24,17 +24,18 @@ function About() {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
           <div className="max-w-[1000px] px-4 w-full sm:grid grid-cols-1  gap-8">
             <div className="sm:text-right text-4xl font-bold ">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id,
-                aliquam!
-              </p>
+              <p>Hello Guys!! I am a FullStack Web developer</p>
             </div>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-              quo ipsa harum ducimus vero reprehenderit aliquam sit illo,
-              architecto animi a, numquam dolorem error repellendus veritatis
+              I am a Student of Thapar University graduating in 2025 with
+              computer science degree. Do ping me up to work on a project or any
+              kind of help.
+            </p>
+            <p>
+              I am a self-taught developer and I am always looking for new
+              challenges. Currently I am learning cloud and blockchain.
             </p>
           </div>
         </div>
