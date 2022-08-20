@@ -2,34 +2,36 @@ import React from 'react'
 import { colours } from '../assets/colors'
 import project from '../assets/project.jpeg'
 import ProjectList from './ProjectList'
-
+import ecommerce from '../assets/e-commerce.svg'
+import krishiSeva from '../assets/krishi-seva.svg'
+import chat from '../assets/chat.svg'
 function Work() {
   const projects = [
     {
       name: 'Ecommerce',
-      img: project,
+      img: ecommerce,
       tech: 'MERN',
       demo: 'disabled',
       code: 'https://github.com/jogeshgupta963/MERN_ecommerce',
     },
     {
       name: 'Krishi Seva',
-      img: project,
+      img: krishiSeva,
       tech: 'MERN',
       demo: 'https://www.google.com',
       code: 'https://github.com/jogeshgupta963/gdscHack--krishiSeva',
     },
+    // {
+    //   name: 'Movie Website',
+    //   img: project,
+    //   tech: ' React',
+    //   demo: 'disabled',
+    //   code: 'https://github.com/jogeshgupta963/react-movie-website',
+    // },
     {
-      name: 'Movie Website',
-      img: project,
-      tech: ' React',
-      demo: 'disabled',
-      code: 'https://github.com/jogeshgupta963/react-movie-website',
-    },
-    {
-      name: 'Real time ChatApp',
-      img: project,
-      tech: 'React,Node,Socket.io',
+      name: 'ChatApp',
+      img: chat,
+      tech: 'MERN,Socket',
       demo: 'https://www.google.com',
       code: 'https://github.com/jogeshgupta963/ChatApp',
     },
