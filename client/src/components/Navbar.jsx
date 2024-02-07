@@ -237,7 +237,7 @@ function Navbar() {
           "
                     >
                         <a
-                            href="https://www.linkedin.com/in/james-kim-b8a8b817b/"
+                            href="mailto:jogeshgupta963@gmail.com"
                             // mailto=""
                             target="_blank"
                             rel="noopener noreferrer"
